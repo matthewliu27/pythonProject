@@ -1,0 +1,33 @@
+This program graphs information and stock data about the drug companies Moderna, Pfizer and BionTech.
+It plots the opening and closing prices, as well as the volume of stock traded of these companies.
+
+pandas_datareader.data is imported to be able to take stock data from yahoo finance api
+datetime is imported to set the beginning and end of the dates of stock prices that I wanted to analyze
+pandas is imported in order to create tables and anaylize the data
+pandas.plotting import scatter_matrix allows me to create the scatter matrix
+matplotlib allows me to plot the data. inline shows me the plots in jupyter notebook.
+
+
+Line 94 identifies a sudden increase in the volume of Pfizer stock traded. The program identifies the date to be November 9th 2020.
+The spike in volume was caused by Pfizer releasing a press release that their Covid 19 vaccine was effective and that they have 
+applied for approval from the FDA.
+Line 100 is plots the opening price of Pfizer stock before and after November 9th 2020 to see the effect of the press release on stock price.
+Lines 106-108 attempt to put the stocks within context of each other. Multiplying the opening stock price by the volume traded that day I 
+roughly estimated the Total amount of money traded that day for each company. I then plotted that data.
+Line 124 identifies the date in which the estimated total amount of money traded was highest.
+The date was December 1st 2020, and can be explained because the Euopean Union had agreed to buy 80 million doses of Moderna's Covid 19 Vaccine
+Lines 136-139 plot a 20 day moving average of Pfizer vs a plot of Pfizer's opening stock price. 
+A moving average is a common stock analytical tool.
+Line 145 concatenates the opening stock prices of all three drug companies. It links the opening stock prices together to attempt to see any
+correlation. 
+Line 152 creates a scatter diagram to visualize if there is any correlation on not.
+
+In order to the program you must have the following modules installed:
+pandas_datareader
+datetime
+matplotlib.pyplot
+pandas.plotting
+pandas
+matplotlib inline
+
+
