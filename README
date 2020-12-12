@@ -1,6 +1,19 @@
 This program graphs information and stock data about the drug companies Moderna, Pfizer and BionTech.
 It plots the opening and closing prices, as well as the volume of stock traded of these companies.
 
+In order to the program you must have the following modules installed:
+pandas_datareader
+datetime
+matplotlib.pyplot
+pandas.plotting
+pandas
+matplotlib inline
+
+To run the program and see the plots jupyter notebook will be requried
+1. Type jupyter notebook
+2. In jupyter notebook open 'Stock Analysis.ipynb'
+3. Click run on the line of code that you want to run
+
 pandas_datareader.data is imported to be able to take stock data from yahoo finance api
 datetime is imported to set the beginning and end of the dates of stock prices that I wanted to analyze
 pandas is imported in order to create tables and anaylize the data
@@ -21,13 +34,3 @@ A moving average is a common stock analytical tool.
 Line 145 concatenates the opening stock prices of all three drug companies. It links the opening stock prices together to attempt to see any
 correlation. 
 Line 152 creates a scatter diagram to visualize if there is any correlation on not.
-
-In order to the program you must have the following modules installed:
-pandas_datareader
-datetime
-matplotlib.pyplot
-pandas.plotting
-pandas
-matplotlib inline
-
-
