@@ -1,6 +1,8 @@
 This program graphs information and stock data about the drug companies Moderna, Pfizer and BionTech.
 It plots the opening and closing prices, as well as the volume of stock traded of these companies.
 
+For a video explanation go here : https://youtu.be/mXav_pjJQdM
+
 In order to the program you must have the following modules installed:
 pandas_datareader
 datetime
@@ -10,9 +12,11 @@ pandas
 matplotlib inline
 
 To run the program and see the plots jupyter notebook will be requried
-1. Type jupyter notebook
-2. In jupyter notebook open 'Stock Analysis.ipynb'
-3. Click run on the line of code that you want to run
+1. Clone the repo by typing git clone https://github.com/matthewliu27/pythonProject in your terminal
+2. In the terminal type jupyter notebook
+3. Open jupyter notebook in your brower
+4. In jupyter notebook open 'Stock Analysis.ipynb'
+5. Click run on the line of code that you want to run
 
 pandas_datareader.data is imported to be able to take stock data from yahoo finance api
 datetime is imported to set the beginning and end of the dates of stock prices that I wanted to analyze
